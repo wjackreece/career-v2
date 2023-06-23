@@ -59,6 +59,15 @@ function Navbar() {
                 Resume Builder
               </Link>
             </li>
+            <li className="nav-item">
+              <Link
+                to="/sign-up"
+                className="nav-links-mobile"
+                onClick={closeMobileMenu}
+              >
+                Sign Up
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
