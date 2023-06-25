@@ -1,4 +1,8 @@
 import React from "react";
+import "../../App.css";
+import { Button } from "../Button/Button";
+
+import "./Hero.css";
 
 function Hero() {
   return (
@@ -13,6 +17,13 @@ function Hero() {
           buttonSize="btn--large"
         >
           Let's Get Started
+        </Button>
+        <Button
+          className="btns"
+          buttonStyle="btn--primary"
+          buttonSize="btn--large"
+        >
+          Find More Info
         </Button>
       </div>
     </div>
