@@ -7,7 +7,7 @@ import "./Hero.css";
 function Hero() {
   return (
     <div className="hero-container">
-      <video src="../public/video/video-2.mp4" autoPlay loop muted />
+      <video src="/videos/video-2.mp4" autoPlay loop muted />
       <h1> Career Changer</h1>
       <p>Let's get started!</p>
       <div className="hero-btns">
