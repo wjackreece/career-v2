@@ -11,7 +11,7 @@ function Hero() {
       <div className="hero-text">
         <h1>
           {" "}
-          Career transition <span>made easy</span> <br /> for all professions{" "}
+          Career transition <span className="h1EndText">made easy</span>
         </h1>
         <p>
           A network with the skills, knowledge, and resources <br /> to support
@@ -21,17 +21,10 @@ function Hero() {
         <div className="hero-btns">
           <Button
             className="btns"
-            buttonStyle="btn--outline"
-            buttonSize="btn--large"
-          >
-            Let's Get Started
-          </Button>
-          <Button
-            className="btns"
             buttonStyle="btn--primary"
             buttonSize="btn--large"
           >
-            Find More Info
+            Let's Get Started
           </Button>
         </div>
       </div>
