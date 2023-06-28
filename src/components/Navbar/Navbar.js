@@ -41,11 +41,11 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/job-comparisons"
+                to="/comparing-jobs"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Job Comparisons
+                Comparing Jobs
               </Link>
             </li>
             <li className="nav-item">
