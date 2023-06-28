@@ -1,3 +1,9 @@
+.navbar-window {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
 .navbar {
   background: #fff;
   height: 80px;
@@ -45,9 +51,9 @@
   margin-right: 2rem;
 }
 
-/* .nav-item {
+.nav-item {
   height: -80px;
-} */
+}
 
 .nav-links {
   color: rgb(4, 161, 185);
