@@ -11,8 +11,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="/welcome" exact element={<Welcome />} />
       </Routes>
+      <Welcome />
     </BrowserRouter>
   );
 }
