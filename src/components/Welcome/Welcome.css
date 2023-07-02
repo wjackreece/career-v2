@@ -15,7 +15,7 @@
 .expectation-container {
   width: 100%;
   margin: 75px 0;
-  padding: 75px 50px;
+  padding: 75px 25px;
   border: 1px solid lightgray;
   border-radius: 25px;
   display: flex;
@@ -33,18 +33,21 @@
   line-height: 32px;
   color: gray;
 }
-.grid-container {
+
+.expectation-info-container {
   margin: 50px 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 25px;
 }
 
 .numbers-container {
+  width: 33%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
   justify-items: center;
+  align-items: center;
+  gap: 25px;
 }
 
 .numbers {
@@ -78,7 +81,6 @@
   align-items: center;
 }
 .welcome-btn {
-  margin-top: 32px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -87,16 +89,24 @@
 }
 
 @media screen and (max-width: 768px) {
-  .grid-container {
-    flex-direction: row;
-  }
-  .numbers-container {
+  .expectation-info-container {
+    margin: 50px 0;
+    display: flex;
     flex-direction: column;
-    gap: 50px;
+  }
+
+  .numbers-container {
+    flex-direction: row;
+    gap: 25px;
+    width: 100%;
   }
   .number-desc-container {
     flex-direction: column;
     gap: 50px;
+  }
+
+  .numbers {
+    width: 55px;
   }
 
   .number-desc {

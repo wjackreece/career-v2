@@ -38,6 +38,17 @@ video {
 
 .hero-container > div > h1 > span {
   color: rgb(4, 161, 185);
+  /* text-decoration: yellow underline;
+  text-decoration-thickness: 10px; */
+}
+
+.h1EndText {
+  background: linear-gradient(to left, #f6f59e93, #f2fb74a4 100%);
+
+  background-position: 0 90%;
+  background-size: 100% 20px;
+  background-repeat: repeat-x;
+  transform: skew(30deg);
 }
 
 .hero-container > div > p {
@@ -52,18 +63,6 @@ video {
 .h1EndText {
   padding: 30px 0 8px;
   position: relative;
-}
-
-.h1EndText::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 15px;
-  width: 450px;
-  height: 15px;
-  transform: skew(-12deg) translateX(-50%);
-  background: yellow;
-  z-index: -1;
 }
 
 .hero-btns {
