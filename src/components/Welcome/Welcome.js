@@ -8,23 +8,26 @@ function Welcome() {
       <h1 className="welcome-title">Welcome to ReWork!</h1>
       <div className="expectation-container">
         <h2>Here's what to expect:</h2>
-        <div className="grid-container">
-          <div className="numbers-container">
+        <div>
+          <div>
             <div className="numbers">1</div>
-            <div className="numbers">2</div>
-            <div className="numbers">3</div>
+            <div className="number-desc">
+              Tell us about your career change aspirations so we can customize
+              ReWork to your situation.
+            </div>
           </div>
-          <div className="number-desc-container">
-            <div class="grid-item" className="number-desc">
-              Tell us about you so we can customize ReWork to your situation.
+          <div>
+            <div className="numbers">2</div>
+            <div className="number-desc">
+              Based on your answers, we'll show you what characteristcs you
+              already share with career fields within your desired scope.
             </div>
-            <div class="grid-item" className="number-desc">
-              Based on your answers, we'll show you the right prices and options
-              for you.
-            </div>
-            <div class="grid-item" className="number-desc">
-              Chose how you'd like to do your taxes, and we'll guide you rest of
-              the way!
+          </div>
+          <div>
+            <div className="numbers">3</div>
+            <div className="number-desc">
+              Chose a specific career path, and we'll provide education
+              requirements and job listings to get you started on your journey!
             </div>
           </div>
         </div>
