@@ -7,8 +7,6 @@ video {
 }
 
 .hero-container {
-  /* background: url("../../../public/images/img-home.jpg") center center/cover
-    no-repeat; */
   height: 100vh;
   width: 100%;
   display: flex;
@@ -43,7 +41,7 @@ video {
 }
 
 .h1EndText {
-  background: linear-gradient(to left, #f6f59e93, #f2fb74a4 100%);
+  background: linear-gradient(to left, #fffc1793, #f3f994a4 100%);
 
   background-position: 0 90%;
   background-size: 100% 20px;
