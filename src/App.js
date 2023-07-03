@@ -3,7 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
-import Welcome from "./components/Welcome/Welcome";
+import CareerChangeSelector from "./components/CareerChangeSelector/CareerChangeSelector";
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" exact element={<Home />} />
+        <Route path="/job-comparisons" element={<CareerChangeSelector />} />
       </Routes>
-      <Welcome />
     </BrowserRouter>
   );
 }
