@@ -21,3 +21,51 @@
   color: gray;
   margin: 20px 0;
 }
+.career-selector {
+  margin: 25px 0;
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+
+.currentCareer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.desiredCareer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.currentCareer > input {
+  background-color: transparent;
+  padding: 8px 20px;
+  border-radius: 2px;
+  padding: 8px 20px;
+  border: 1px solid black;
+  transition: all 0.3s ease-out;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.desiredCareer > input {
+  background-color: transparent;
+  padding: 8px 20px;
+  border-radius: 2px;
+  padding: 8px 20px;
+  border: 1px solid black;
+  transition: all 0.3s ease-out;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.btn {
+  margin: 25px 0;
+}
