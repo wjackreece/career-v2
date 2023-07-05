@@ -6,8 +6,8 @@ function CareerChangeSelector() {
   return (
     <div className="selector-container">
       <h1 className="selector-title">
-        Tell us a little bit about you current career and your career change
-        goals{" "}
+        Tell us a little bit about you current career <br />
+        and your career change goals{" "}
       </h1>
       <h2 className="selector-subtitle">
         This will help us make sure we analyze all possible options
@@ -53,7 +53,7 @@ function CareerChangeSelector() {
         </div>
         <div>
           I would like to work in the{" "}
-          <select name="" id="currentCareer" required>
+          <select name="" id="desiredCareer" required>
             <option value="" selected disabled>
               --Please choose an option--
             </option>
