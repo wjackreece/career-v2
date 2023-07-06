@@ -45,16 +45,25 @@ function Navbar() {
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Job Comparisons
+                Compare
               </Link>
             </li>
             <li className="nav-item">
+              <Link
+                to="/loading-page"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                LoadingPage
+              </Link>
+            </li>
+            {/* <li className="nav-item">
               <Link
                 to="/job-qualifications"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Job Qualifications
+                Qual
               </Link>
             </li>
             <li className="nav-item">
@@ -65,7 +74,7 @@ function Navbar() {
               >
                 Find Jobs
               </Link>
-            </li>
+            </li> */}
 
             <li className="nav-item">
               <Link
