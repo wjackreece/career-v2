@@ -57,6 +57,15 @@ function Navbar() {
                 LoadingPage
               </Link>
             </li>
+            <li className="nav-item">
+              <Link
+                to="/chatGPTInfo"
+                className="nav-links"
+                onClick={closeMobileMenu}
+              >
+                ChatGPT
+              </Link>
+            </li>
             {/* <li className="nav-item">
               <Link
                 to="/job-qualifications"
