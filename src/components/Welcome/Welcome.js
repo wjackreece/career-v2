@@ -34,8 +34,8 @@ function Welcome() {
         <div className="welcome-btn">
           <Button
             className="btn"
-            buttonStyle="btn--primary"
-            buttonSize="btn--large"
+            // buttonStyle="btn--primary"
+            // buttonSize="btn--large"
           >
             Let's Get Started
           </Button>
