@@ -10,23 +10,6 @@ const app = express();
 app.use(bodyParser.json());
 app.use(cors());
 
-// app.post("/chat", async (req, res) => {
-//   const { prompt } = req.body;
-//   const config = new Configuration({
-//     apiKey: REACT_APP_apiKey,
-//   });
-
-//   const openai = new OpenAIApi(config);
-//   const completion = await openai.createCompletion({
-//     model: "gpt-3.5-turbo",
-//     max_tokens: 512,
-//     temperature: 1,
-//     prompt: prompt,
-//   });
-
-//   res.send(completion.data.choices[0].text);
-// });
-
 const { Configuration, OpenAIApi } = require("openai");
 const configuration = new Configuration({
   apiKey: REACT_APP_apiKey,
@@ -52,7 +35,6 @@ app.post("/chat", async (req, res) => {
     data,
     { headers }
   );
-  // console.log(response.data.choices[0].text);
   res.status(200).send({
     message: "Here it is.",
     data: await response.data.choices[0].message.content,
