@@ -18,26 +18,8 @@ function ChatGPTForm() {
         const splitResArray = resString.split(/(?=[0-9])/);
         console.log(splitResArray);
 
-        // Create the list element:
-        // let resList = document.createElement("ul");
-
-        // for (let i = 0; i < splitResArray.length; i++) {
-        //   // Create the list item:
-        //   let item = document.createElement("li");
-
-        //   // Set its contents:
-        //   item.appendChild(document.createTextNode(splitResArray[i]));
-
-        //   // Add it to the list:
-        //   resList.appendChild(item);
-        // }
-
-        // Finally, return the constructed list:
-
-        // console.log("resList", resList);
-        // setResponse(resList);
-
-        setResponse(`This is the response: ${splitResArray}`);
+        setResponse(resString.split(/(?=[0-9])/));
+        console.log(`Response: ${response}`);
       })
       .catch((error) => {
         console.log(error);
@@ -58,10 +40,14 @@ function ChatGPTForm() {
         />
       </form>
       <div className="response-background">
-        <p className="response-text">
+        {/* <p className="response-text">
           {response ? response : "ChatGPT Response here"}
-        </p>
+        </p> */}
+        {response.map((num) => {
+          return <p className="response-num">{num}</p>;
+        })}
       </div>
+      <div className="responseInfo"></div>
     </div>
   );
 }
