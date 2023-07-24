@@ -35,19 +35,7 @@ function ChatGPTForm(props) {
 
   return (
     <div className="chatGPTForm-container">
-      {/* <form className="chatGPT-form" >
-        <input
-          type="text"
-          className="request"
-          placeholder="Enter request here"
-          value={prompt}
-          // onChange={handlePrompt}
-        />
-      </form> */}
       <div className="response-background">
-        {/* <p className="response-text">
-          {response ? response : "ChatGPT Response here"}
-        </p> */}
         {response.map((num, i) => {
           return (
             <p className="response-num" key={i}>
