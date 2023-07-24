@@ -8,12 +8,7 @@ function CareerChangeSelector(props) {
     props;
 
   console.log(currentCareer, desiredCareer);
-  // const saveCareerChangeDataHandler = (enteredCareerChangeData) => {
-  //   const careerChangeData = {
-  //     ...enteredCareerChangeData,
-  //     id: Math.floor(Math.random() * 10000).toString(),
-  //   };
-  // };
+
   return (
     <div className="selector-container">
       <h1 className="selector-title">
@@ -28,7 +23,6 @@ function CareerChangeSelector(props) {
         setCurrentCareer={setCurrentCareer}
         desiredCareer={desiredCareer}
         setDesiredCareer={setDesiredCareer}
-        // onSaveCareerChangeData={saveCareerChangeDataHandler}
       />
     </div>
   );
