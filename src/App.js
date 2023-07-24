@@ -10,7 +10,6 @@ import ChatGPTInfo from "./components/ChatGPTInfo/ChatGPTInfo";
 function App() {
   const [currentCareer, setCurrentCareer] = useState("");
   const [desiredCareer, setDesiredCareer] = useState("");
-  const [splitResArray, setSplitResArray] = useState([]);
   return (
     <BrowserRouter>
       <Navbar />
@@ -23,8 +22,6 @@ function App() {
               setCurrentCareer={setCurrentCareer}
               desiredCareer={desiredCareer}
               setDesiredCareer={setDesiredCareer}
-              splitResArray={splitResArray}
-              setSplitResArray={setSplitResArray}
             />
           }
         />
