@@ -1,11 +1,15 @@
 import React from "react";
+
 import { useNavigate } from "react-router-dom";
 
 import "./CareerChangeSelector.css";
 
+export const SplitResArrayContext = React.createContext();
+
 function CareerChangeSelectorForm(props) {
   const { currentCareer, setCurrentCareer, desiredCareer, setDesiredCareer } =
     props;
+
   const navigate = useNavigate();
 
   const currentCareerChangeHandler = (e) => {

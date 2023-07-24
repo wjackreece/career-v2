@@ -15,7 +15,10 @@ export default function ChatGPTInfo(props) {
         {`Our research has determined that many ${currentCareer}s and ${desiredCareer}s share the
         following characteristics:`}
       </h2>
-      <ChatGPTForm />
+      <ChatGPTForm
+        currentCareer={currentCareer}
+        desiredCareer={desiredCareer}
+      />
       <h2 className="selector-subtitle">
         {`Let's use this information to find job postings similar to ${desiredCareer}s.`}
       </h2>
