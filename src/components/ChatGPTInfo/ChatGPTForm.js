@@ -3,7 +3,6 @@ import React from "react";
 import "./ChatGPTForm.css";
 
 function ChatGPTForm({ chatGPTResponse }) {
-  // update
   return (
     <div className="chatGPTForm-container">
       <div className="response-background">
