@@ -7,6 +7,7 @@ function ChatGPTForm(props) {
   const { currentCareer, desiredCareer } = props;
   const [response, setResponse] = useState([]);
   const HTTP = "http://localhost:8020/chat";
+
   let prompt = `Give me an numbered list with 7 shows the similarities between ${currentCareer}s and ${desiredCareer}`;
 
   console.log(currentCareer, desiredCareer, prompt);
