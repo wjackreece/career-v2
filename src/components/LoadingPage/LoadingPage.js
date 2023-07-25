@@ -6,13 +6,14 @@ import { fadeIn, staggerContainer } from "../../utils/motion";
 import "./LoadingPage.css";
 
 function LoadingPage() {
-  const delayedSubtitile = "Ok, here's what we found ...";
+  const delayedSubtitile = "Just gather a few more bits of info...";
+
   const [activateSubtitle, setActivateSubtitle] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setActivateSubtitle(true);
-    }, 3000);
+    }, 10000);
   }, []);
 
   return (

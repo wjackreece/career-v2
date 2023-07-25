@@ -41,14 +41,14 @@ function Navbar() {
             </li>
             <li className="nav-item">
               <Link
-                to="/job-comparisons"
+                to="/career-help"
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
                 Compare
               </Link>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <Link
                 to="/loading-page"
                 className="nav-links"
@@ -56,8 +56,8 @@ function Navbar() {
               >
                 LoadingPage
               </Link>
-            </li>
-            <li className="nav-item">
+            </li> */}
+            {/* <li className="nav-item">
               <Link
                 to="/chatGPTInfo"
                 className="nav-links"
@@ -65,7 +65,7 @@ function Navbar() {
               >
                 ChatGPT
               </Link>
-            </li>
+            </li> */}
             {/* <li className="nav-item">
               <Link
                 to="/job-qualifications"
