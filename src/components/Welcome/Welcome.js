@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "../Button/Button";
+
 import "./Welcome.css";
 
 function Welcome() {
@@ -32,13 +32,7 @@ function Welcome() {
           </div>
         </div>
         <div className="welcome-btn">
-          <Button
-            className="btn"
-            // buttonStyle="btn--primary"
-            // buttonSize="btn--large"
-          >
-            Let's Get Started
-          </Button>
+          <button className="btn">Let's Get Started</button>
         </div>
       </div>
     </div>
