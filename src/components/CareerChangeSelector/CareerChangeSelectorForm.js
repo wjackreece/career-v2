@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./CareerChangeSelector.css";
+import "./CareerChangeSelectorForm.css";
 
 export const SplitResArrayContext = React.createContext();
 
@@ -13,7 +13,7 @@ function CareerChangeSelectorForm({
 }) {
   return (
     <div className="careerChangeSelectorForm-container">
-      <form action="">
+      <form className="career-selector-form" action="">
         <div className="career-selector">
           <div className="currentCareer">
             <div className="currentCareerQuestion">
