@@ -4,9 +4,11 @@ import React from "react";
 import "./ChatGPTInfo.css";
 import ChatGPTForm from "./ChatGPTForm";
 
-export default function ChatGPTInfo(props) {
-  const { currentCareer, desiredCareer } = props;
-  console.log({ currentCareer, desiredCareer });
+export default function ChatGPTInfo({
+  currentCareer,
+  desiredCareer,
+  chatGPTResponse,
+}) {
   return (
     <div className="chatGPT-container">
       <h1 className="chatGPT-title">Great! Here's what we found . . .</h1>
@@ -15,10 +17,7 @@ export default function ChatGPTInfo(props) {
         {`Our research has determined that many ${currentCareer}s and ${desiredCareer}s share the
         following characteristics:`}
       </h2>
-      <ChatGPTForm
-        currentCareer={currentCareer}
-        desiredCareer={desiredCareer}
-      />
+      <ChatGPTForm chatGPTResponse={chatGPTResponse} />
       <h2 className="selector-subtitle">
         {`Let's use this information to find job postings similar to ${desiredCareer}s.`}
       </h2>

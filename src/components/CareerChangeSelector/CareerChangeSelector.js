@@ -2,13 +2,29 @@ import React from "react";
 
 import "./CareerChangeSelector.css";
 import CareerChangeSelectorForm from "./CareerChangeSelectorForm";
-
-function CareerChangeSelector(props) {
-  const { currentCareer, setCurrentCareer, desiredCareer, setDesiredCareer } =
-    props;
-
-  console.log(currentCareer, desiredCareer);
-
+import LoadingPage from "../LoadingPage/LoadingPage";
+import ChatGPTInfo from "../ChatGPTInfo/ChatGPTInfo";
+function CareerChange({
+  currentCareer,
+  setCurrentCareer,
+  desiredCareer,
+  setDesiredCareer,
+  submitCareerChange,
+  isLoading,
+  chatGPTResponse,
+}) {
+  if (isLoading) {
+    return <LoadingPage />;
+  }
+  if (chatGPTResponse.length > 0) {
+    return (
+      <ChatGPTInfo
+        currentCareer={currentCareer}
+        desiredCareer={desiredCareer}
+        chatGPTResponse={chatGPTResponse}
+      />
+    );
+  }
   return (
     <div className="selector-container">
       <h1 className="selector-title">
@@ -23,9 +39,10 @@ function CareerChangeSelector(props) {
         setCurrentCareer={setCurrentCareer}
         desiredCareer={desiredCareer}
         setDesiredCareer={setDesiredCareer}
+        submitCareerChange={submitCareerChange}
       />
     </div>
   );
 }
 
-export default CareerChangeSelector;
+export default CareerChange;
