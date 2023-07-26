@@ -1,8 +1,11 @@
 import React from "react";
 
 import "./Welcome.css";
+import { useNavigate } from "react-router-dom";
 
 function Welcome() {
+  const navigate = useNavigate();
+
   return (
     <div className="welcome-container">
       <h1 className="welcome-title">Welcome to ReWork!</h1>
@@ -32,7 +35,9 @@ function Welcome() {
           </div>
         </div>
         <div className="welcome-btn">
-          <button className="btn">Let's Get Started</button>
+          <button onClick={() => navigate("/career-help")} className="btn">
+            Let's Get Started
+          </button>
         </div>
       </div>
     </div>
