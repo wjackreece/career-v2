@@ -28,8 +28,8 @@ function CareerChange({
   return (
     <div className="selector-container">
       <h1 className="selector-title">
-        Tell us a little bit about you current career and your career change
-        goals{" "}
+        Tell us a little bit about you current career <br /> and your desired
+        career goals{" "}
       </h1>
       <h2 className="selector-subtitle">
         This will help us make sure we analyze all possible options
