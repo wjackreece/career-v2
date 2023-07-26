@@ -22,9 +22,15 @@ export default function ChatGPTInfo({
         {`Let's use this information to find job postings similar to ${desiredCareer}s.`}
       </h2>
       <div className="selector-btn">
-        <button type="submit" className="btn">
-          Continue
-        </button>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={`https://www.indeed.com/jobs?q=${desiredCareer}`}
+        >
+          <button type="submit" className="btn">
+            {`Find ${desiredCareer} jobs on Indeed`}
+          </button>
+        </a>
       </div>
     </div>
   );

@@ -103,3 +103,24 @@ video {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 336px) {
+  .hero-container {
+    height: auto;
+    justify-content: normal;
+  }
+  video {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-container > div > h1 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .hero-container > div > p {
+    font-size: 10px;
+  }
+}

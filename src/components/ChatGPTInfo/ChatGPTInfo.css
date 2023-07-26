@@ -21,3 +21,19 @@
   color: gray;
   margin: 20px 0;
 }
+
+@media screen and (max-width: 425px) {
+  .chatGPT-container {
+    margin: 25px;
+  }
+
+  .chatGPT-title {
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .chatGPT-subtitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
