@@ -21,3 +21,35 @@
   color: gray;
   margin: 20px 0;
 }
+
+@media screen and (max-width: 425px) {
+  .selector-container {
+    margin: 25px;
+  }
+
+  .selector-title {
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  .selector-subtitle {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 336px) {
+  .selector-container {
+    margin: 25px;
+  }
+
+  .selector-title {
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .selector-subtitle {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}

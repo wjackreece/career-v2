@@ -163,3 +163,16 @@
     transition: 250ms;
   }
 }
+
+@media screen and (max-width: 336px) {
+  .navbar {
+    justify-content: flex-start;
+    height: 50px;
+  }
+
+  .navbar-logo {
+    position: relative;
+    transform: none;
+    font-size: 20px;
+  }
+}
