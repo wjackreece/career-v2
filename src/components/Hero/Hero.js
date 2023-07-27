@@ -13,8 +13,8 @@ function Hero() {
           Career transition <span className="h1EndText">made easy</span>
         </h1>
         <p>
-          A network with the skills, knowledge, and resources <br /> to support
-          you through a successful career change{" "}
+          A network with the skills, knowledge, and resources to support you
+          through a successful career change{" "}
         </p>
       </div>
     </div>
