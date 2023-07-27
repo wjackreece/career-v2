@@ -1,5 +1,4 @@
 .welcome-container {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,6 +6,7 @@
 }
 
 .welcome-title {
+  text-align: center;
   font-weight: 700;
   font-size: 35px;
   margin-top: 75px;
@@ -129,5 +129,33 @@
 
   .number-desc {
     text-align: left;
+  }
+}
+@media screen and (max-width: 425px) {
+  .welcome-container {
+    margin: 25px;
+    height: auto;
+  }
+
+  .welcome-title {
+    margin-top: 50px;
+  }
+
+  .expectation-container {
+    margin: 50px 0;
+    padding: 35px 20px;
+  }
+
+  .expectation-container > h2 {
+    font-size: 20px;
+  }
+
+  .expectation-info-container {
+    margin: 20px 0;
+  }
+
+  .numbers {
+    width: auto;
+    height: 30px;
   }
 }

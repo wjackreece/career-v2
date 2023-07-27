@@ -164,7 +164,7 @@
   }
 }
 
-@media screen and (max-width: 336px) {
+@media screen and (max-width: 425px) {
   .navbar {
     justify-content: flex-start;
     height: 50px;
@@ -172,6 +172,7 @@
 
   .navbar-container {
     width: 100%;
+    height: auto;
     justify-content: space-between;
   }
 

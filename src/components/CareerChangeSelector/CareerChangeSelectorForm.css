@@ -63,7 +63,7 @@
   margin: 25px 0;
 }
 
-@media screen and (max-width: 336px) {
+@media screen and (max-width: 425px) {
   .careerChangeSelectorForm-container {
     margin: 0px;
   }

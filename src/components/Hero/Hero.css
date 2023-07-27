@@ -41,7 +41,6 @@ video {
 
 .h1EndText {
   background: linear-gradient(to left, #fffb17b9, #f7fda7d7 100%);
-
   background-position: 0 95%;
   background-size: 100% 20px;
   background-repeat: repeat-x;
@@ -104,23 +103,18 @@ video {
   }
 }
 
-@media screen and (max-width: 336px) {
-  .hero-container {
-    height: auto;
-    justify-content: normal;
-  }
-  video {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-  }
-
+@media screen and (max-width: 425px) {
   .hero-container > div > h1 {
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 35px;
+    line-height: 35px;
   }
 
   .hero-container > div > p {
-    font-size: 10px;
+    font-size: 20px;
+    margin: 40px 10px;
+  }
+
+  .h1EndText {
+    background-size: 100% 5px;
   }
 }
