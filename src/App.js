@@ -17,10 +17,20 @@ function App() {
     setIsLoading(true);
     const URL = "http://localhost:8020/chat";
     const prompt = `Give me an numbered list with 7 shows the similarities between ${currentCareer}s and ${desiredCareer}`;
+    const data = {
+      model: "gpt-3.5-turbo",
+      max_tokens: 512,
+      temperature: 1,
+      messages: [{ role: "user", content: prompt }],
+    };
+    const headers = {
+      "Content-Type": "application/json",
+      Authorization: "Bearer " + process.env.REACT_APP_apiKey,
+    };
     axios
-      .post(URL, { prompt })
-      .then((res) => {
-        let resString = res.data.data;
+      .post("https://api.openai.com/v1/chat/completions", data, { headers })
+      .then((response) => {
+        let resString = response.data.choices[0].message.content;
         // console.log({ resString });
         const splitResArray = resString.split(/(?=[0-9])/);
         // console.log(splitResArray);
