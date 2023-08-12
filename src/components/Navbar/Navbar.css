@@ -8,7 +8,7 @@
   background: #fff;
   height: 80px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   font-size: 1.2rem;
   font-weight: 500;
@@ -28,7 +28,7 @@
 .navbar-logo {
   color: #04a1b9;
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 50px;
   cursor: pointer;
   text-decoration: none;
   font-size: 2rem;
@@ -165,26 +165,9 @@
 }
 
 @media screen and (max-width: 425px) {
-  .navbar {
-    justify-content: flex-start;
-    height: 50px;
-  }
-
-  .navbar-container {
-    width: 100%;
-    height: auto;
-    justify-content: space-between;
-  }
-
   .navbar-logo {
-    position: relative;
-    transform: none;
-    font-size: 20px;
-  }
-  .menu-icon {
-    display: flex;
-
-    margin-right: 20px;
+    font-size: 1.5rem;
+    margin-left: 20px;
     position: relative;
     transform: none;
   }

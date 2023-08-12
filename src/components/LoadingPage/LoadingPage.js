@@ -13,7 +13,7 @@ function LoadingPage() {
   useEffect(() => {
     setTimeout(() => {
       setActivateSubtitle(true);
-    }, 10000);
+    }, 15000);
   }, []);
 
   return (
