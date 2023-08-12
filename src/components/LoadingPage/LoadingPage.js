@@ -13,7 +13,7 @@ function LoadingPage() {
   useEffect(() => {
     setTimeout(() => {
       setActivateSubtitle(true);
-    }, 15000);
+    }, 10000);
   }, []);
 
   return (
@@ -33,12 +33,12 @@ function LoadingPage() {
         speedMultiplier={1}
       />
       <div className="loading-text">
-        <motion.h1
+        <h1
           variants={fadeIn("up", "tween", 0.5, 0.5)}
           className="loading-title"
         >
           Give us just a moment while we do some digging
-        </motion.h1>
+        </h1>
         {activateSubtitle && (
           <h2
             variants={fadeIn("up", "tween", 0.5, 0.5)}
